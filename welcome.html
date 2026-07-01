@@ -30,12 +30,44 @@
       font-size: clamp(1rem, 2vw, 1.5rem);
       opacity: 0.85;
     }
+    .team {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .team-member {
+      font-size: 1.1rem;
+    }
+    .team-member .name {
+      font-weight: 600;
+      color: #fff;
+    }
+    .team-member .title {
+      font-size: 0.95rem;
+      opacity: 0.75;
+      margin-top: 0.25rem;
+    }
   </style>
 </head>
 <body>
   <main class="banner">
     <h1>Welcome to the Mars Engineering Team Home Page</h1>
     <p>Engineering the next frontier 🚀</p>
+    <div class="team">
+      <div class="team-member">
+        <div class="name">Bellona Atalanta</div>
+        <div class="title">VP Engineering</div>
+      </div>
+      <div class="team-member">
+        <div class="name">Rhea Silvia</div>
+        <div class="title">Principal Engineer</div>
+      </div>
+      <div class="team-member">
+        <div class="name">Sam Chen</div>
+        <div class="title">Junior Engineer</div>
+      </div>
+    </div>
   </main>
 </body>
 </html>
