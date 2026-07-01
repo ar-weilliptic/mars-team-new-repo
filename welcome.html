@@ -48,6 +48,43 @@
       opacity: 0.75;
       margin-top: 0.25rem;
     }
+    .file-upload {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .file-upload label {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+    .file-input-wrapper {
+      display: inline-block;
+    }
+    .file-input-wrapper input[type="file"] {
+      padding: 0.5rem 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 0.5rem;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .file-input-wrapper input[type="file"]::file-selector-button {
+      padding: 0.5rem 1rem;
+      background: rgba(122, 44, 26, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 0.3rem;
+      color: #fff;
+      cursor: pointer;
+      font-weight: 500;
+      margin-right: 1rem;
+    }
+    .file-input-wrapper input[type="file"]:hover {
+      border-color: rgba(255, 255, 255, 0.5);
+      background: rgba(255, 255, 255, 0.15);
+    }
   </style>
 </head>
 <body>
@@ -66,6 +103,12 @@
       <div class="team-member">
         <div class="name">Sam Chen</div>
         <div class="title">Junior Engineer</div>
+      </div>
+    </div>
+    <div class="file-upload">
+      <label for="document-upload">Attach a Document</label>
+      <div class="file-input-wrapper">
+        <input type="file" id="document-upload" name="document" accept=".pdf,.doc,.docx,.txt,.jpg,.png,.gif" />
       </div>
     </div>
   </main>
